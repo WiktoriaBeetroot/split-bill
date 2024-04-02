@@ -43,7 +43,7 @@ function App() {
         selectedFriend={selectedFriend}
         onSelect={handleSelect}
       />
-      {selectedFriend && <SplitForm selectedFriend={selectedFriend} handleSplitBill={handleSplitBill} />}
+      {selectedFriend && <SplitForm key={selectedFriend.id} selectedFriend={selectedFriend} handleSplitBill={handleSplitBill} />}
     </div>
   );
 }
